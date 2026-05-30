@@ -152,7 +152,7 @@ show = false
 
 Bar module name. Built-in modules or custom modules with a `custom-<id>` pattern.
 
-One of: `"battery"`, `"bluetooth"`, `"cava"`, `"clock"`, `"cpu"`, `"dashboard"`, `"hyprland-workspaces"`, `"hyprsunset"`, `"idle-inhibit"`, `"keybind-mode"`, `"keyboard-input"`, `"media"`, `"microphone"`, `"netstat"`, `"network"`, `"niri-workspaces"`, `"notifications"`, `"power"`, `"ram"`, `"separator"`, `"storage"`, `"systray"`, `"updates"`, `"volume"`, `"weather"`, `"window-title"`, `"world-clock"`.
+One of: `"battery"`, `"bluetooth"`, `"brightness"`, `"cava"`, `"clock"`, `"cpu"`, `"dashboard"`, `"hyprland-workspaces"`, `"hyprsunset"`, `"idle-inhibit"`, `"keybind-mode"`, `"keyboard-input"`, `"media"`, `"microphone"`, `"netstat"`, `"network"`, `"niri-workspaces"`, `"notifications"`, `"power"`, `"ram"`, `"separator"`, `"storage"`, `"systray"`, `"updates"`, `"volume"`, `"weather"`, `"window-title"`, `"world-clock"`.
 
 String matching `^custom-[a-z0-9-]+$`.
 
@@ -385,6 +385,17 @@ What identifies each workspace's label.
 | `"name-or-index"` | Show the name when set, fall back to the index. |
 | `"name-only"` | Show only the name; unnamed workspaces show nothing. |
 | `"index-and-name"` | Show both, joined as `"1: web"`. Unnamed workspaces show the index alone. |
+
+## Layer {#layer}
+
+Layer-shell layer a window is placed on, from furthest back to furthest front.
+
+| Value | Meaning |
+|---|---|
+| `"background"` | Below everything else, used for wallpapers and ambient surfaces. |
+| `"bottom"` | Behind regular application windows. |
+| `"top"` | Above regular application windows. |
+| `"overlay"` | Above everything, including fullscreen application windows. |
 
 ## Location {#location}
 
